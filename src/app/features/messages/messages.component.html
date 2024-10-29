@@ -1,0 +1,35 @@
+
+<div *ngFor="let message of messages?.incoming??[]">
+    {{message.title}}
+</div>
+<br>
+<div [formGroup]="form" class="input-name">
+    
+   
+        <div class="input-wrapper">
+            <div [ngClass]="(selected)?(selected.isOnline?'status-indicator-online':'status-indicator-offline'):''"></div>
+            <input [ngClass]="(selected!==null)?'input':''" formControlName="userName">                    
+        </div>
+      
+        <div class="drop-down" >
+            <div *ngFor="let user of selectedUSers1$|async" class="user-container" (click)="onClick(user)" >    
+                <div [ngClass]="(user.isOnline)?'online':'offline'"></div>
+                <div> {{ user.name}}</div> 
+            </div>
+        </div>
+<!-- 
+        <div *ngIf="(selectedUSers1$ | async)??[].length>0 && !selected">
+            <ng-container *ngIf="selectedUSers1$ | async as users">
+              <div *ngFor="let user of users" class="user-container" (click)="onClick(user)">
+                <div [ngClass]="user.isOnline ? 'online' : 'offline'"></div>
+                <div>{{ user.name }}</div>
+              </div>
+            </ng-container>
+          </div> -->
+        
+  
+    
+</div>
+
+
+ 

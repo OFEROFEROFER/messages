@@ -1,0 +1,67 @@
+.online {
+    width: 10px; /* Adjust the size as needed */
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+  }
+
+  .offline {
+    width: 10px; /* Adjust the size as needed */
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+  }
+  .user-container{
+    display: flex;
+    padding-left: 5px;
+    align-items: center;
+     width: 100px;
+    justify-content: flex-start;
+  }
+
+  .user-container:hover{
+    background-color: blue;
+    cursor: pointer;
+  }
+
+  .drop-down{
+    height: 100px;   
+    overflow-y: auto;
+  }
+
+  .input-name{
+    width: 200px;
+  }
+
+  .input-wrapper {
+    position: relative; /* Make the wrapper relative for absolute positioning of the circle */
+    display: inline-block; /* To ensure the wrapper fits around the input */
+  }
+
+  .status-indicator-online {
+    position: absolute; /* Position the circle absolutely within the wrapper */
+    top: 50%; /* Center vertically */
+    left: 10px; /* Position from the right edge */
+    transform: translateY(-50%); /* Adjust for the height of the circle */
+    width: 10px; /* Circle diameter */
+    height: 10px; /* Circle diameter */
+    background-color: green; /* Circle color */
+    border-radius: 50%; /* Make it a circle */
+  }
+
+  .status-indicator-offline {
+    position: absolute; /* Position the circle absolutely within the wrapper */
+    top: 50%; /* Center vertically */
+    left: 10px; /* Position from the right edge */
+    transform: translateY(-50%); /* Adjust for the height of the circle */
+    width: 10px; /* Circle diameter */
+    height: 10px; /* Circle diameter */
+    background-color: red; /* Circle color */
+    border-radius: 50%; /* Make it a circle */
+  }
+
+  
+
+  .input{
+    padding-left: 30px;
+  }

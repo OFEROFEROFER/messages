@@ -1,0 +1,13 @@
+<form class="form" [formGroup]="form"  >
+    <ng-container *ngIf="isLoading">
+        <div class="loader"></div>
+    </ng-container>
+
+    <ng-container *ngIf="!isLoading">
+        <input placeholder="User Name" formControlName="userName">
+        <input placeholder="password" type="password" formControlName="password">
+        <button type="submit" (click)="submit()">Submit</button>
+    </ng-container>
+
+
+</form>
