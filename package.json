@@ -1,6 +1,6 @@
 {
   "name": "messages",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -10,7 +10,6 @@
     "mock-server": "node ./mock-server/server.js",
     "cypress:open": "cypress open --browser chrome",
     "cypress:run": "cypress run"
-    
   },
   "private": true,
   "dependencies": {
